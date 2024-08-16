@@ -1,0 +1,77 @@
+/* Estilos generales */
+.contenedor-testimonio {
+  width: 1170px;
+  /*height: 368px;*/
+  margin: 10px 10px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+   
+  margin: 20px;
+  padding: 20px;
+  /*border-radius: 10px;*/
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.imagen-testimonio {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.contenedor-texto-testimonio {
+  text-align: center;
+}
+
+.nombre-testimonio {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.cargo-testimonio {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.texto-testimonio {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+/* Media Queries para pantallas más grandes */
+@media (min-width: 768px) {
+  .contenedor-testimonio {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .imagen-testimonio {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .contenedor-texto-testimonio {
+    flex: 1;
+  }
+
+  .nombre-testimonio {
+    font-size: 1.5em;
+  }
+
+  .cargo-testimonio {
+    font-size: 1.2em;
+  }
+
+  .texto-testimonio {
+    font-size: 1em;
+  }
+}
